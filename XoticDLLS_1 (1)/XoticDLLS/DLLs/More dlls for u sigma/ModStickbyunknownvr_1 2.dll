@@ -1,0 +1,13 @@
+// Token: 0x060000002 RID: 2 RVA: 0x00002110 File Offset: 0x00000310
+public override void OnUpdate()
+{
+    this.GorillaPlayerScript.maxJumpSpeed = 1000000f;
+    PhotonNetwork.LocalPlayer.Nickname = "<color=white><size=1>UKMONKEMAN</color></size>";
+    this._coinScripts.HowMuchADay = 10000000;
+    PhotonMan.SetCosmetic(5, "StickModR");
+    bool inRoom = PhotonNetwork.InRoom
+    if (inRoom)
+    {
+        bool primaryButtonDown = EasyInputs.GetPrimaryButtonDown(0);
+        if (primaryButtonDown)
+
